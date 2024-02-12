@@ -1,0 +1,87 @@
+//Variables used
+$font-family : 'Poppins', sans-serif;
+$heading-font: 'Unbounded', sans-serif;
+$primary-color: #000;
+$secondary-color: #f2cc8ef6;
+$tertiary-color: blue;
+$text-color: #f9f9f9;
+$hover-color:  #df7a5e;
+$transparent-bg: rgba(10, 10, 10, 0.801);
+$nav-kool: 25px;
+$borderRadius: 5rem;
+$regular-weight: light;
+$nav-weight: bold; 
+$input-border: #ddd;
+$foot-paragraph : #7a6e6ecc;
+$allTransition: all 0.3s ease-in-out;
+$center_paragraph : rgb(104, 95, 95);
+
+
+//Rules involving mixins
+
+
+@mixin center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin fromTop{
+    animation:fromToppy 1s ease-in;
+}
+@mixin removeAnim{
+    animation: removeAnimy 5s ease;
+}
+@mixin perfectCentering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin border ($width:1px, $color: $secondary-color){
+    border: $width solid $color;
+}
+@mixin footMixin {
+    color: $foot-paragraph;
+    text-align: center;
+    margin: 10px 0px;
+}
+@mixin close {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@mixin allRound {
+    border-radius: 50%;
+}
+@mixin notify-form{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@mixin overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(10, 10, 10, 0.301);
+}
+@mixin register-link {
+    background-color: transparent;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+@mixin background{
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-attachment: fixed;
+}
+@mixin transitionMixin($time){
+    transition: all $time ease-in-out;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kool Form Pack by Hmabiola</title>
+    <script defer src="js/kool_pack.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><i class="icon bi-box"></i> Kool Form Pack</a>
+        <div class="icon-holder">
+            <span>Stay connected</span>
+           <i class="icon bi-facebook"></i>
+           <i class="icon bi-twitter"></i>
+           <i class="icon bi-whatsapp"></i>
+        </div>
+        <div>
+            <span>
+                <button id="notify">Notify me <span class="bi-arrow-right"></span></button>
+            </span>
+            <span id="menu-bar">&#9776;</span>
+        </div>
+    </nav>
+    <div id="myModal">
+        <div id="myModal-container">
+            <span class="back_close">
+                <span></span>
+            </span><span class="close" id="closeModal">&times;</span>
+            <div id="content">
+                <h2>Stay up to date</h2>
+                <form action="#" method="POST">
+                    <input type="email" name="user_mail" required = "required" placeholder="Your@email.com">
+                    <input type="submit" value="Notify" id="notifyBtn">
+                    <p class="foot">By signing up, you agree to our Privacy Notice</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="register">
+        <div>
+            <h1>Create an account</h1>
+            <form action="#">
+                <div class="input-container">
+                    <div class="form-floating">
+                        <input type="text" name="user_mail"  required = "required" placeholder="Full Name"  class="form-control">
+                        <label for="floatingInput">Full Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="user_mail"  required = "required" placeholder="Email Address"  class="form-control">
+                        <label for="floatingInput">Email Address</label>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <input type="password" name="user_password"  required = "required" placeholder="Password"  class="form-control">
+                    <label for="floatingInput">Password</label>
+                </div>
+                <p class="foot" id="checkbox">
+                    <input type="checkbox">
+                    I agree to the Terms of Service and Privacy Policy.
+                </p>
+                <div class="last">
+                    <div>
+                         <input type="submit" value="Submit"  class="form-control">
+                    </div>
+                    <div>
+                      <p class="foot">Already have an account?  &nbsp;<br> <a href="login.html">Login</a></p>  
+                    </div>          
+                </div>
+                
+            </form>
+        </div>   
+    </div>
+    <div id="side-bar">
+        <span id="close" class="close">&times;</span>
+        <div>
+            <a href="login.html">Login Form</a>
+            <a href="#" class="current">Create an account</a>
+            <a href="password-reset.html">Password Reset</a>
+            <a href="page404.html">404 Page</a>
+            <a href="contact-form.html">Contact Form</a>
+        </div>
+    </div>
+     <div id="overlay"></div> 
+    <video src="video/video.mp4" autoplay="true" muted loop id="backgroundVideo" ></video>
+</body>
+</html>
