@@ -16,7 +16,7 @@ Kool Form Pack is a multi-site, that features a black theme video background. It
 
 - The "Login page" also has the top nav bar component similar to the Homepage, so as other webpages, which enables navigation through the website.
 
--The main contents in the "login page" are form fields for inputing "log in" details
+- The main contents in the "login page" are form fields for inputing "log in" details
 
 <hr />
 
