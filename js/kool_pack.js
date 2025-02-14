@@ -58,7 +58,7 @@ let interval = setInterval(() => {
     let days, hours, minutes, seconds;
     const currentDate = new Date();
 /*initially, when this website was buil, it countdown was until Dec 8; which was my birthday. Today, 9th of December after my birthday, I updated it Mar 2; start day of Ramadan*/ 
-    let newDate = new Date("Mar 02 2025 11:59:59");
+    let newDate = new Date("Feb 15 2025 11:59:59");
     let difference =  newDate - currentDate;
     days = Math.floor(difference / (1000 * 60 * 60 * 24));
     hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
